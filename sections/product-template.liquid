@@ -38,7 +38,6 @@
   <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
     <div class="grid__item product-single__media-group {{ product_media_width }}{% if section.settings.media_size == 'full' %} product-single__media-group--full{% endif %}" data-product-single-media-group>
       {%- assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
-
       {%- for media in product.media -%}
         {% include 'media', media: media, featured_media: featured_media, height: height, enable_image_zoom: enable_image_zoom, image_zoom_size: product_image_zoom_size, image_scale: product_image_scale %}
       {%- endfor -%}
@@ -68,7 +67,6 @@
         {% if product.media.size > 4 %}
           {%- assign enable_thumbnail_slides = true -%}
         {% endif %}
-
         <div data-thumbnail-slider>
           <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} slider-active{% endif %}" data-slider>
             {% if enable_thumbnail_slides == true %}
@@ -77,7 +75,6 @@
                 <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
               </button>
             {% endif %}
-
             <ul class="product-single__thumbnails product-single__thumbnails-{{ section.id }}" data-slider-container>
               {% if enable_thumbnail_slides == true %}
                 <div class="product-single__thumbnails-slider-track" data-slider-track>
@@ -135,8 +132,8 @@
       <div class="product-single__meta">
 
         <h1 class="product-single__title">{{ product.title }}</h1>
+        <div style="margin-top:-10px; margin-bottom: 15px;">⭐⭐⭐⭐⭐</div>
         <script>window.performance.mark('debut:product:title_visible');</script>
-
           <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
           </div>
