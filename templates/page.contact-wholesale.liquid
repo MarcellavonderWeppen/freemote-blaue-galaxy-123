@@ -46,21 +46,30 @@
             </div>
           </div>
 
+          {%- comment -%} Custom wholesale code {%- endcomment -%}
+
+          <div class="grid grid--half-gutters">
+            <div class="grid__item medium-up--one-half">
+              <label for="{{ formId }}-business_name">{{ 'wholesale-contact.form.business_name' | t }}</label>
+              <input type="text" id="{{ formId }}-business_name" name="contact[{{ 'wholesale-contact.form.business_name' | t }}]" value="{% if form[business_name] %}{{ form[business_name] }}{% elsif customer %}{{ customer.business_name }}{% endif %}">
+            </div>
+            <div class="grid__item medium-up--one-half">
+              <label for="{{ formId }}-website">{{ 'wholesale-contact.form.website' | t }}</label>
+              <input type="url" id="{{ formId }}-website" name="contact[{{ 'wholesale-contact.form.website' | t }}]" value="{% if form[website] %}{{ form[website] }}{% elsif customer %}{{ customer.website }}{% endif %}">
+            </div>
+          </div>
+          
+          {%- comment -%} End of custom wholesale code {%- endcomment -%}
+
+          {% section "contact-wholesale" %}
+
           <label for="{{ formId }}-phone">{{ 'contact.form.phone' | t }}</label>
           <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
           
-          {% section "contact" %}
-
-          {%- comment -%}
-          <label for="{{ formId }}-order_number">{{ 'contact.form.order_number' | t }}</label>
-          <input type="number" id="{{ formId }}-order_number" name="contact[{{ 'contact.form.order_number' | t }}]">
-          {%- endcomment -%}
-
           <label for="{{ formId }}-message">{{ 'contact.form.message' | t }}</label>
           <textarea rows="10" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
 
           <input type="submit" class="btn" value="{{ 'contact.form.submit' | t }}">
-
         {% endform %}
       </div>
     </div>

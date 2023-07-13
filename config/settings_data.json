@@ -1,35 +1,83 @@
 {
   "current": {
+    "color_button": "#0d195e",
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "sections": {
       "header": {
         "type": "header",
-        "settings": {}
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": 150,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Hey",
+          "message_link": "",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff"
+        }
       },
       "hero-1": {
         "type": "hero",
         "settings": {
+          "image": "shopify:\/\/shop_images\/homepage_slider_7a9432ed-68c6-497f-a051-c7f97249b311.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
           "hero_size": "large",
-          "text_size": "large"
+          "text_size": "large",
+          "title": "Die Sterne - zum Greifen nahe",
+          "text": "<p>Bringen Sie die Sterne zu sich nach Hause, tauchen Sie ein in die Magie des Universums. Entdecken Sie neue Sternbilder und die Wunder des Nachthimmels ganz neu. Ihr persönliches Planetarium mit nur einem Klick! Ihr persönlicher Blick in die Unendlichkeit.<\/p>",
+          "button_label": "Jetzt Sternengreifer werden",
+          "button_link": "shopify:\/\/products\/die-blaue-galaxy"
         }
       },
       "feature-row": {
         "type": "feature-row",
-        "settings": {}
+        "settings": {
+          "image": "shopify:\/\/shop_images\/homepage_1.jpg",
+          "layout": "left",
+          "title": "Verwandeln Sie Ihr Schlafzimmer in eine Sternenlandschaft",
+          "text": "<p>Erleben Sie die Schönheit des Nachthimmels direkt von Ihrem Bett aus. Unsere Projektoren bringen den Sternenhimmel zu Ihnen und verwandeln Ihr Schlafzimmer in ein ruhiges, sternenübersätes Paradies.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       },
       "feature-columns": {
         "type": "feature-columns",
         "blocks": {
           "feature-columns-0": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
           },
           "feature-columns-1": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
           },
           "feature-columns-2": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
           }
         },
         "block_order": [
@@ -38,19 +86,19 @@
           "feature-columns-2"
         ],
         "settings": {
-          "title": ""
+          "title": "",
+          "align_text": "left"
         }
       },
       "collection": {
         "type": "collection",
         "settings": {
-          "grid": 4
-        }
-      },
-      "hero-2": {
-        "type": "hero",
-        "settings": {
-          "text_size": "large"
+          "title": "Featured collection",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
         }
       },
       "quotes": {
@@ -58,15 +106,24 @@
         "blocks": {
           "quotes-0": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Seit wir den Sternenprojektor haben, sind unsere Abende zu Hause wie kleine Abenteuer. Jedes Mal, wenn wir ihn einschalten, sind wir aufs Neue von der Schönheit des Universums verzaubert. Es ist wirklich beeindruckend, wie er unser Wohnzimmer verändert.<\/p>",
+              "author": "Sandra, 35, Architektin aus Berlin"
+            }
           },
           "quotes-1": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Ich habe den Projektor für meine Tochter gekauft und sie liebt ihn. Es ist wirklich schön, sie so begeistert von den Sternen zu sehen. Das Gerät ist einfach zu bedienen und die Qualität der Projektion ist hervorragend. Ich kann es nur empfehlen.\"<\/p>",
+              "author": "Tim, 42, IT-Berater aus München"
+            }
           },
           "quotes-2": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Wir haben den Projektor für unser Schlafzimmer gekauft und sind total begeistert. Er schafft eine unglaublich beruhigende Atmosphäre, die uns dabei hilft, abzuschalten und besser zu schlafen. Es ist wie ein kleiner Urlaub in unserem eigenen Zuhause.<\/p>",
+              "author": "Lena und Markus, 29 und 31, junge Eltern aus Hamburg"
+            }
           }
         },
         "block_order": [
@@ -75,7 +132,7 @@
           "quotes-2"
         ],
         "settings": {
-          "title": ""
+          "title": "Glückliche Kunden sprechen für sich"
         }
       },
       "image-bar": {
@@ -83,51 +140,125 @@
         "blocks": {
           "image-bar-0": {
             "type": "image",
-            "settings": {}
-          },
-          "image-bar-1": {
-            "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify:\/\/shop_images\/instagram_1.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
           },
           "image-bar-2": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "image": "shopify:\/\/shop_images\/instagram_2.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/instagram_3.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "a11614fe-b7fb-4efb-aa85-bfad6375aaac": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/instagram_4.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
           }
         },
         "block_order": [
           "image-bar-0",
+          "image-bar-2",
           "image-bar-1",
-          "image-bar-2"
+          "a11614fe-b7fb-4efb-aa85-bfad6375aaac"
         ],
-        "settings": {}
+        "custom_css": [],
+        "settings": {
+          "gallery-heading": "As seen on Insta",
+          "section_height": "medium"
+        }
       },
       "footer": {
         "type": "footer",
         "blocks": {
           "footer-0": {
             "type": "link_list",
-            "settings": {}
+            "settings": {
+              "title": "Navigation",
+              "menu": "main-menu"
+            }
           },
-          "footer-1": {
-            "type": "newsletter",
-            "settings": {}
+          "358fc114-f2ca-4492-b87e-851c115eed50": {
+            "type": "link_list",
+            "settings": {
+              "title": "Legal",
+              "menu": "footer"
+            }
+          },
+          "9ca56d83-1a62-4dee-a5b5-fd2f8640bd18": {
+            "type": "text",
+            "settings": {
+              "title": "Talk about your business",
+              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "358fc114-f2ca-4492-b87e-851c115eed50",
+          "9ca56d83-1a62-4dee-a5b5-fd2f8640bd18"
         ],
         "settings": {
-          "show_payment_icons": true
+          "show_payment_icons": true,
+          "color_footer_bg": "#f6f6f6",
+          "color_footer_text": "#333232",
+          "show_currency_selector": false,
+          "show_locale_selector": false
+        }
+      },
+      "eafbeddd-6a77-4989-a7b2-27ee64e3b487": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/instagram_3.jpg",
+          "layout": "right",
+          "title": "Erschaffen Sie traumhafte Nächte",
+          "text": "<p>Lassen Sie sich von der friedlichen Pracht des Universums in den Schlaf wiegen. Mit unseren Projektoren tauchen Sie ein in ein Meer aus Sternen, das für eine entspannende Atmosphäre sorgt und süße Träume garantiert.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "5442f1b9-184a-464b-8eae-bc6367e34619": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/homepage_3.jpg",
+          "layout": "left",
+          "title": "Bringen Sie Romantik in Ihr Wohnzimmer",
+          "text": "<p>Verwandeln Sie einfache Abendessen in romantische, kosmische Erlebnisse. Unsere Sternenprojektoren schaffen eine einzigartige, verzaubernde Atmosphäre, die jeden Raum in einen spektakulären Ort verwandelt.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "order_number": {
+        "type": "order_number",
+        "settings": {
+          "order_number": false
         }
       }
     },
     "content_for_index": [
       "hero-1",
       "feature-row",
-      "feature-columns",
-      "collection",
-      "hero-2",
+      "eafbeddd-6a77-4989-a7b2-27ee64e3b487",
+      "5442f1b9-184a-464b-8eae-bc6367e34619",
       "quotes",
       "image-bar"
     ]

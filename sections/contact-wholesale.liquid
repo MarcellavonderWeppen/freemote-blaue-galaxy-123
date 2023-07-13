@@ -1,0 +1,25 @@
+
+{% unless section.settings.business_type == blank %}
+{% assign business_types = section.settings.business_type | split: ',' %}
+<label for="{{ formId }}-business_type">{{ 'wholesale-contact.form.business_type' | t }}</label>
+<select id="{{ formId }}-business_type" name="contact[{{ 'wholesale-contact.form.business_type' | t }}]">
+  {% for business_type in business_types %}
+    <option value="{{ business_type | strip }}">{{ business_type | strip }}</option>
+  {% endfor %}
+</select>
+{% endunless %}
+
+{% schema %}
+{
+    "name": "Wholesale Contact Form",
+    "settings": [
+        {
+            "type": "text", 
+            "id": "business_type",
+            "label": "Type of business (enter comma-separated values)"
+        }
+    ] 
+}
+{% endschema %}
+
+
